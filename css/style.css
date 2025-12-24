@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Hegarty&family=Oswald:wght@200..700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("../bg.jpg");
+    min-height: 100vh;
+    background-size: 120vw 120vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 100px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "BBH Hegarty", sans-serif;
+}
+
+#board{
+    background: linear-gradient(#b5e352, #73EC8B);
+    width: 90vmin;
+    height: 90vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+
+.head{
+    background: linear-gradient(green,lime);
+    border: 2px solid black;
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.snake{
+    background-color: white;
+    border: .25vmin solid white;
+    border-radius: 14px;
+}
+
+.food{
+    background: linear-gradient(brown,orange);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
